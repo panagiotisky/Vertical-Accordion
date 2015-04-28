@@ -1,0 +1,70 @@
+body {
+  font-family: "Segoe UI", arial, helvetica, freesans, sans-serif;
+  font-size: 100%;
+  background-color: #e5eaff;
+  color: #333;
+}
+
+section.accordion {
+  display: block;
+  width: 480px;
+  margin: 48px auto 0;
+  padding: 8px;
+  background-color: #666;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+section.accordion article.accordion-article {
+  display: block;
+  width: 448px;
+  padding: 0 16px;
+  height: 32px;
+  margin: 0 0 8px 0;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  
+  transition: .5s all ease-in-out;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+section.accordion article.accordion-article:last-of-type {
+  margin: 0;
+}
+
+section.accordion article.accordion-article h2 {
+  width: 100%;
+  font-size: 1em;
+  line-height: 32px;
+  padding: 0;
+  margin: 0;
+  color: #ddd;
+  cursor: pointer;
+  
+  transition: .5s all ease-in-out;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+section.accordion article.accordion-article.selected {
+  height: 240px;
+  background-color: #fff;
+}
+
+section.accordion article.accordion-article.selected h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-top: 8px;
+}
